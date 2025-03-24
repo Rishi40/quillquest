@@ -44,7 +44,7 @@ names = []
 pattern = re.compile(r"VALUES\s*\(\s*'\"(.*?)\"',\s*'\"(.*?)\"',\s*'\"(.*?)\"',")
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-init_sql_path = os.path.join(current_dir, "..", "init.sql")
+init_sql_path = os.path.join(current_dir, "init.sql")
 
 with open(init_sql_path, "r", encoding="utf-8") as file:
     for line in file:
